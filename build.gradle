@@ -23,3 +23,18 @@ allprojects {
 task clean(type: Delete) {
   delete rootProject.buildDir
 }
+
+ext.versions = [ANDROID_SUPPORT              : "25.3.1",
+                CALLIGRAPHY                  : "2.2.0",
+                CONSTRAINT_LAYOUT            : "1.0.2",
+                FIREBASE                     : "10.2.1",
+                GLIDE                        : "3.7.0",
+                DAGGER                       : "2.9",
+                KOTLIN                       : "1.1.1",
+                LEAK_CANARY                  : "1.5",
+                RETROFIT                     : "2.1.0",
+                OK_HTTP                      : "3.6.0",
+                RX_ANDROID                   : "2.0.1",
+                RX_JAVA                      : "2.0.7",
+                RX_PERMISSION                : "0.9.3@aar",
+                STETHO                       : "1.4.2"]
