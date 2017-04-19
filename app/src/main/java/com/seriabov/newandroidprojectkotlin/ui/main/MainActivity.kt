@@ -1,7 +1,6 @@
 package com.seriabov.newandroidprojectkotlin.ui.main
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import com.seriabov.newandroidprojectkotlin.R
 import com.seriabov.newandroidprojectkotlin.ui.common.BaseActivity
 
