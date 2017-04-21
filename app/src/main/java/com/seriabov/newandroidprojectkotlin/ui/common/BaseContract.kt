@@ -8,6 +8,8 @@ interface BaseContract {
 
   interface View {
 
+    fun showLoading(isLoading : Boolean)
+
   }
 
   interface Presenter<in V : BaseContract.View> {
