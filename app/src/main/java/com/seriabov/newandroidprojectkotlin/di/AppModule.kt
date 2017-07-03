@@ -12,7 +12,7 @@ import javax.inject.Singleton
  * @author Sergei Riabov
  */
 
-@Module
+@Module(includes = arrayOf(ViewModelModule::class))
 class AppModule {
 
   @Singleton

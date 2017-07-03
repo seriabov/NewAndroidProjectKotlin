@@ -2,6 +2,7 @@ package com.seriabov.newandroidprojectkotlin
 
 import android.app.Activity
 import android.app.Application
+import com.seriabov.newandroidprojectkotlin.di.AppInjector
 import com.seriabov.newandroidprojectkotlin.util.onApplicationCreate
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
@@ -19,6 +20,8 @@ class AppDelegate : Application(), HasActivityInjector {
 
   override fun onCreate() {
     super.onCreate()
+
+    AppInjector.init(this)
 
     onApplicationCreate()
   }

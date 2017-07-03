@@ -1,5 +1,6 @@
 package com.seriabov.newandroidprojectkotlin.ui.common
 
+import android.arch.lifecycle.ViewModel
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
@@ -7,21 +8,14 @@ import io.reactivex.disposables.Disposable
  * @author Sergei Riabov
  */
 
-open class BasePresenter<V : BaseContract.View> : BaseContract.Presenter<V> {
-
-  var view: V? = null
+abstract class BaseViewModel : ViewModel() {
 
   private val mDisposables: CompositeDisposable by lazy { CompositeDisposable() }
 
-  override fun attachView(view: V) {
-    this.view = view
-  }
-
-  override fun detachView() {
-    view = null
+  override fun onCleared() {
+    super.onCleared()
     mDisposables.clear()
   }
-
 
   fun Disposable.addToDisposables() {
     mDisposables.add(this)

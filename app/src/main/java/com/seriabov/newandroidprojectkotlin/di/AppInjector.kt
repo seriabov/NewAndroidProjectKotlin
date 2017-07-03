@@ -25,7 +25,6 @@ import android.support.v4.app.FragmentManager
 import com.seriabov.newandroidprojectkotlin.AppDelegate
 import dagger.android.AndroidInjection
 import dagger.android.support.AndroidSupportInjection
-import dagger.android.support.HasSupportFragmentInjector
 
 /**
  * Helper class to automatically inject fragments if they implement [Injectable].
