@@ -33,7 +33,7 @@ ext.versions = [
     ESPRESSO                : "2.2.2",
     FIREBASE                : "10.2.1",
     GLIDE                   : "3.7.0",
-    DAGGER                  : "2.9",
+    DAGGER                  : "2.11",
     KOTLIN                  : kotlin_version,
     LEAK_CANARY             : "1.5",
     RETROFIT                : "2.3.0",
