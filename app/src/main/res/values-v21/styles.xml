@@ -5,6 +5,9 @@
   <style name="Base.V21.AppTheme" parent="Base.V0.AppTheme">
     <!-- API 21 specific attributes -->
     <item name="android:windowContentTransitions">true</item>
-    <item name="android:windowSharedElementEnterTransition">@android:animator/fade_in</item>
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+    <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
   </style>
 </resources>
