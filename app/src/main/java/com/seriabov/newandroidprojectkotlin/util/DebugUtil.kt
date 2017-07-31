@@ -1,23 +1,15 @@
+@file:Suppress("UNUSED_PARAMETER", "NOTHING_TO_INLINE")
+
 package com.seriabov.newandroidprojectkotlin.util
 
-import android.util.Log
-
-import com.seriabov.newandroidprojectkotlin.BuildConfig
-
-/**
- * @author Sergei Riabov
- */
+import timber.log.Timber
 
 const val TAG = "GUIDE_DEBUG"
 
-fun log(message: String, tag: String = TAG) {
-  if (BuildConfig.DEBUG) {
-    Log.d(TAG, message)
-  }
+inline fun log(message: String) {
+  Timber.d(message)
 }
 
-fun Throwable.log(message : String, tag : String = TAG) {
-  if (BuildConfig.DEBUG) {
-    Log.d(TAG, message, this)
-  }
+inline fun Throwable.log(message: String = "") {
+  Timber.e(this, message)
 }

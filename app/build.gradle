@@ -68,6 +68,8 @@ dependencies {
 
   compile "uk.co.chrisjenx:calligraphy:$versions.CALLIGRAPHY"
 
+  compile "com.jakewharton.timber:timber:$versions.TIMBER"
+
   debugCompile "com.facebook.stetho:stetho:$versions.STETHO"
   debugCompile "com.squareup.leakcanary:leakcanary-android:$versions.LEAK_CANARY"
 
