@@ -1,5 +1,6 @@
 package com.seriabov.newandroidprojectkotlin.util
 
+import com.facebook.stetho.Stetho
 import com.seriabov.newandroidprojectkotlin.AppDelegate
 import timber.log.Timber
 
@@ -8,5 +9,7 @@ import timber.log.Timber
  */
 
 fun AppDelegate.onApplicationCreate() {
+  Stetho.initializeWithDefaults(this)
+
   Timber.plant(Timber.DebugTree())
 }
