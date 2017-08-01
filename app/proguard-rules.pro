@@ -50,6 +50,10 @@
 -keepclasseswithmembers class * implements android.arch.lifecycle.GenericLifecycleObserver {
     <init>(...);
 }
+## Android architecture components: Room
+-dontwarn android.arch.util.paging.CountedDataSource
+-dontwarn android.arch.persistence.room.paging.LimitOffsetDataSource
+
 # ViewModel's empty constructor is considered to be unused by proguard
 -keepclassmembers class * extends android.arch.lifecycle.ViewModel {
     <init>(...);
