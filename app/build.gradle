@@ -35,51 +35,51 @@ android {
 }
 
 dependencies {
-  compile fileTree(dir: 'libs', include: ['*.jar'])
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-  compile "com.android.support:appcompat-v7:$versions.ANDROID_SUPPORT"
-  compile "com.android.support:design:$versions.ANDROID_SUPPORT"
-  compile "com.android.support:cardview-v7:$versions.ANDROID_SUPPORT"
-  compile "com.android.support:recyclerview-v7:$versions.ANDROID_SUPPORT"
-  compile "com.android.support.constraint:constraint-layout:$versions.CONSTRAINT_LAYOUT"
-  compile "android.arch.lifecycle:runtime:$versions.ANDROID_ARCH"
-  compile "android.arch.lifecycle:extensions:$versions.ANDROID_ARCH"
-  compile "android.arch.persistence.room:runtime:$versions.ANDROID_ARCH"
-  compile "android.arch.persistence.room:rxjava2:$versions.ANDROID_ARCH"
+  implementation "com.android.support:appcompat-v7:$versions.ANDROID_SUPPORT"
+  implementation "com.android.support:design:$versions.ANDROID_SUPPORT"
+  implementation "com.android.support:cardview-v7:$versions.ANDROID_SUPPORT"
+  implementation "com.android.support:recyclerview-v7:$versions.ANDROID_SUPPORT"
+  implementation "com.android.support.constraint:constraint-layout:$versions.CONSTRAINT_LAYOUT"
+  implementation "android.arch.lifecycle:runtime:$versions.ANDROID_ARCH"
+  implementation "android.arch.lifecycle:extensions:$versions.ANDROID_ARCH"
+  implementation "android.arch.persistence.room:runtime:$versions.ANDROID_ARCH"
+  implementation "android.arch.persistence.room:rxjava2:$versions.ANDROID_ARCH"
   kapt "android.arch.persistence.room:compiler:$versions.ANDROID_ARCH"
 
-  compile "com.google.firebase:firebase-crash:$versions.FIREBASE"
+  implementation "com.google.firebase:firebase-crash:$versions.FIREBASE"
 
-  compile "org.jetbrains.kotlin:kotlin-stdlib:$versions.KOTLIN"
+  implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.KOTLIN"
 
-  compile "io.reactivex.rxjava2:rxandroid:$versions.RX_ANDROID"
-  compile "io.reactivex.rxjava2:rxjava:$versions.RX_JAVA"
-  compile "com.tbruyelle.rxpermissions2:rxpermissions:$versions.RX_PERMISSION"
+  implementation "io.reactivex.rxjava2:rxandroid:$versions.RX_ANDROID"
+  implementation "io.reactivex.rxjava2:rxjava:$versions.RX_JAVA"
+  implementation "com.tbruyelle.rxpermissions2:rxpermissions:$versions.RX_PERMISSION"
 
-  compile "com.github.bumptech.glide:glide:$versions.GLIDE"
+  implementation "com.github.bumptech.glide:glide:$versions.GLIDE"
 
-  compile "com.squareup.retrofit2:retrofit:$versions.RETROFIT"
-  compile "com.squareup.retrofit2:converter-gson:$versions.RETROFIT"
-  compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+  implementation "com.squareup.retrofit2:retrofit:$versions.RETROFIT"
+  implementation "com.squareup.retrofit2:converter-gson:$versions.RETROFIT"
+  implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
 
-  compile "com.squareup.okhttp3:okhttp:$versions.OK_HTTP"
-  compile "com.squareup.okhttp3:logging-interceptor:$versions.OK_HTTP"
+  implementation "com.squareup.okhttp3:okhttp:$versions.OK_HTTP"
+  implementation "com.squareup.okhttp3:logging-interceptor:$versions.OK_HTTP"
 
-  compile "com.google.dagger:dagger:$versions.DAGGER"
-  compile "com.google.dagger:dagger-android:$versions.DAGGER"
-  compile "com.google.dagger:dagger-android-support:$versions.DAGGER"
+  implementation "com.google.dagger:dagger:$versions.DAGGER"
+  implementation "com.google.dagger:dagger-android:$versions.DAGGER"
+  implementation "com.google.dagger:dagger-android-support:$versions.DAGGER"
   kapt "com.google.dagger:dagger-android-processor:$versions.DAGGER"
   kapt "com.google.dagger:dagger-compiler:$versions.DAGGER"
 
-  compile "uk.co.chrisjenx:calligraphy:$versions.CALLIGRAPHY"
+  implementation "uk.co.chrisjenx:calligraphy:$versions.CALLIGRAPHY"
 
-  compile "com.jakewharton.timber:timber:$versions.TIMBER"
+  implementation "com.jakewharton.timber:timber:$versions.TIMBER"
 
-  debugCompile "com.facebook.stetho:stetho:$versions.STETHO"
-  debugCompile "com.squareup.leakcanary:leakcanary-android:$versions.LEAK_CANARY"
+  debugImplementation "com.facebook.stetho:stetho:$versions.STETHO"
+  debugImplementation "com.squareup.leakcanary:leakcanary-android:$versions.LEAK_CANARY"
 
-  testCompile "junit:junit:$versions.JUNIT"
-  androidTestCompile("com.android.support.test.espresso:espresso-core:$versions.ESPRESSO", {
+  testImplementation "junit:junit:$versions.JUNIT"
+  androidTestImplementation("com.android.support.test.espresso:espresso-core:$versions.ESPRESSO", {
     exclude group: 'com.android.support', module: 'support-annotations'
     exclude group: 'com.google.code.findbugs', module: 'jsr305'
   })
